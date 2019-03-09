@@ -1,15 +1,12 @@
 <!doctype html>
 <html lang="en">
   <style>
-
-    @include @media (min-width: 576px) and (max-width: 767.98px) media-breakpoint-down(md) {
-      .custom-class {
-        display: block;}
-    }
     footer {
       background-color: #777;
-      padding: 10px;
+      padding: 7px;
+      display: block;
       text-align: center;
+      margin-top: 10px;
       color: white;}
 
   </style>
@@ -73,16 +70,34 @@
     <!-- Bagian Container -->
     <div class="container">
       <div class="row">
-        <div class="col-8"></div>
+        <div class="col-8">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
         <div class="col-4">
           <div class="list-group">
             <button type="button" class="list-group-item list-group-item-action active">
               Cras justo odio
             </button>
-            <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
-            <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
-            <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
-            <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Cras justo odio
+                <span class="badge badge-primary badge-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Dapibus ac facilisis in
+                <span class="badge badge-primary badge-pill">2</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Morbi leo risus
+                <span class="badge badge-primary badge-pill">1</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
